@@ -9,5 +9,5 @@ def transcribe_audio(file_path):
         return text
 
 # Transcribe WAV file
-transcript = transcribe_audio("let_her_go_x.wav")
+transcript = transcribe_audio("google_audio.wav")
 print("Transcript:", transcript)

@@ -1,7 +1,7 @@
 import os
 
 def create_srt(translations, timings, output_dir):
-    # Create directory if it doesn't exist
+   
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
@@ -13,14 +13,12 @@ def create_srt(translations, timings, output_dir):
                 srt_file.write(f"{start_time} --> {end_time}\n")
                 srt_file.write(f"{text}\n\n")
         print(f"Subtitle file created: {srt_filename}")
-
-# Example usage
 translations = {
     'hi': '----------',
     'mr': ' ---------',
     'es': ' ---------'
 }
-timings = [("00:00:00,000", "00:00:29,000"),  # Adjust timings as needed
+timings = [("00:00:00,000", "00:00:29,000"), 
            ("00:00:05,000", "00:00:10,000")]
 output_dir = "subtitles"
 
